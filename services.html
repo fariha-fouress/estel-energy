@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Estel Energy</title>
+  <meta name="description" content="Estel Energy trades across various verticals — Agro Products, Polymers, Cosmetics, and Metals — backed by end-to-end shipping, bulk logistics, and B2B distribution.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="./estellogo.png">
+
+  <!-- Page-scoped tweaks for compact product splits -->
+  <style>
+    .product-split {
+      display: grid;
+      grid-template-columns: minmax(180px, var(--img-w, 290px)) 1fr;
+      gap: 56px;
+      align-items: center;
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+    }
+    .product-split:last-of-type { border-bottom: 1px solid var(--border); }
+    .product-split.reverse {
+      grid-template-columns: 1fr minmax(180px, var(--img-w, 290px));
+    }
+    .product-split.reverse > :first-child { order: 2; }
+    .product-img {
+      aspect-ratio: 1 / 1;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, var(--surface), var(--bg-2));
+      border: 1px solid var(--border);
+      box-shadow: 0 16px 40px rgba(15, 27, 34, 0.05);
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+    }
+    .product-img img { width: 100%; height: 100%; object-fit: cover; }
+    .product-tag {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-2);
+      background: rgba(123, 111, 166, 0.10);
+      border: 1px solid rgba(123, 111, 166, 0.25);
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+    }
+    .product-name {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3vw, 2rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+    }
+    .product-desc {
+      color: var(--text-muted);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    .product-desc ul {
+      margin-top: 14px;
+      list-style: none;
+      display: grid;
+      gap: 6px;
+    }
+    .product-desc li {
+      position: relative;
+      padding-left: 20px;
+      font-size: 14.5px;
+    }
+    .product-desc li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 9px;
+      width: 12px; height: 2px;
+      background: var(--accent);
+    }
+    @media (max-width: 880px) {
+      .product-split,
+      .product-split.reverse { grid-template-columns: 1fr; gap: 28px; padding: 36px 0; }
+      .product-split.reverse > :first-child { order: 0; }
+      .product-img { max-width: 420px; margin: 0 auto; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="ambient-bg"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="./estellogo.png" alt="Estel Energy logo" class="brand-logo">
+        <span class="brand-name">Estel <span>Energy</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Products</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">
+        Contact us
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <button class="menu-toggle" aria-label="Menu"><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <div class="reveal">
+        <span class="eyebrow">What we trade</span>
+      </div>
+      <h1 class="reveal" data-delay="1">Multiple product verticals. One disciplined desk.</h1>
+      <p class="reveal" data-delay="2">From cropland to refinery, raw metal to retail-ready cosmetics — we source, ship, and settle across various categories, each with dedicated specialists and audited supply chains.</p>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section" style="padding-top: 40px;">
+    <div class="container">
+
+      <!-- Agro -->
+      <div class="product-split reveal">
+        <div class="product-img">
+          <img src="./agroproducts.png" alt="Agricultural products"
+               onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;padding:24px;color:var(--text-dim);font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-align:center&quot;>Agro Products<br>image</div>'">
+        </div>
+        <div>
+          <span class="product-tag">Vertical 01</span>
+          <h2 class="product-name">Agro Products</h2>
+          <p class="product-desc">Agricultural commodities sourced from vetted growers and cooperatives across major producing regions. Rice, grain, oilseeds, sugar, pulses, animal feed and processed foods — moved in bulk under quality-controlled, traceable supply chains.</p>
+          <div class="product-desc">
+            <ul>
+              <li>Rice — long-grain, short-grain and parboiled varieties</li>
+              <li>Bulk grain, oilseeds, sugar, pulses</li>
+              <li>Animal feed and feed ingredients</li>
+              <li>Processed and packaged food items</li>
+              <li>Origin certificates and phytosanitary documentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Polymers -->
+      <div class="product-split reverse reveal" data-delay="1">
+        <div class="product-img">
+          <img src="./shippingone.png" alt="Polymers and plastics"
+               onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;padding:24px;color:var(--text-dim);font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-align:center&quot;>Polymers<br>image</div>'">
+        </div>
+        <div>
+          <span class="product-tag">Vertical 02</span>
+          <h2 class="product-name">Polymers</h2>
+          <p class="product-desc">Industrial-grade polymers and resins for converters, manufacturers and packaging producers. Sourced directly from major petrochemical producers including Siam Cement Group, IRPC Public Co. Ltd, Formosa Plastics Corporation and GPPC.</p>
+          <div class="product-desc">
+            <ul>
+              <li>PE, PP, PVC, PET, PS and engineering resins</li>
+              <li>Spot and term contracts, FOB or CIF</li>
+              <li>Container and bulk vessel loads</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cosmetics -->
+      <div class="product-split reveal" data-delay="2">
+        <div class="product-img">
+          <img src="./cosmeticsone.png" alt="Cosmetics raw materials and finished goods"
+               onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;padding:24px;color:var(--text-dim);font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-align:center&quot;>Cosmetics<br>image</div>'">
+        </div>
+        <div>
+          <span class="product-tag">Vertical 03</span>
+          <h2 class="product-name">Cosmetics</h2>
+          <p class="product-desc">Finished cosmetic goods and raw cosmetic ingredients for personal care brands and contract manufacturers — surfactants, emulsifiers, fragrances and packaged formulations from audited suppliers.</p>
+        </div>
+      </div>
+
+      <!-- Metals -->
+      <div class="product-split reverse reveal" data-delay="3">
+        <div class="product-img">
+          <img src="./metalsone.png" alt="Industrial metals"
+               onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;padding:24px;color:var(--text-dim);font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-align:center&quot;>Metals<br>image</div>'">
+        </div>
+        <div>
+          <span class="product-tag">Vertical 04</span>
+          <h2 class="product-name">Metals</h2>
+          <p class="product-desc">Industrial metals for manufacturers, fabricators and infrastructure projects. We handle ferrous and non-ferrous categories with mill certificates, third-party inspection, and traceable origin documentation.</p>
+          <div class="product-desc">
+            <ul>
+              <li>Steel — hot-rolled, cold-rolled, galvanized coil</li>
+              <li>Aluminum ingots, billets and extrusions</li>
+              <li>Copper cathode and scrap categories</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">How we work</span>
+        <h2>End-to-end capabilities, no handoffs.</h2>
+        <p>We don't subcontract the parts that matter. Sourcing, logistics, finance, and compliance all sit under one desk so there's a single point of accountability per shipment.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card reveal" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(236, 243, 247, 0.88) 100%), url('./shipping.png') center / cover no-repeat;">
+          <span class="card-num">01</span>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18l-2-5H5l-2 5z"/><path d="M5 13l1.5-5h11L19 13"/><circle cx="7" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg>
+          </div>
+          <h3 class="card-title">End-to-End Shipping</h3>
+          <p class="card-body">Fast, reliable transportation through our trusted carrier network — delivering materials on time, every time.</p>
+        </div>
+
+        <div class="card reveal" data-delay="1" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(236, 243, 247, 0.88) 100%), url('./shippingtwo.png') center / cover no-repeat;">
+          <span class="card-num">02</span>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6m0 0l-3-3m3 3l3-3"/><path d="M5 12a7 7 0 1014 0 7 7 0 00-14 0z"/></svg>
+          </div>
+          <h3 class="card-title">Bulk Logistics</h3>
+          <p class="card-body">Equipped to manage high-volume orders with seamless coordination, timely delivery, and scalable supply solutions.</p>
+        </div>
+
+        <div class="card reveal" data-delay="2" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(236, 243, 247, 0.88) 100%), url('./operations.png') center / cover no-repeat;">
+          <span class="card-num">03</span>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"/></svg>
+          </div>
+          <h3 class="card-title">Quality Control</h3>
+          <p class="card-body">Pre-shipment inspection, third-party verification and specification matching — so what arrives is exactly what was contracted.</p>
+        </div>
+
+        <div class="card reveal" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(236, 243, 247, 0.88) 100%), url('./metalsone.png') center / cover no-repeat;">
+          <span class="card-num">04</span>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5-3 9-7 9-12V5l-9-3-9 3v5c0 5 4 9 9 12z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3 class="card-title">B2B Distribution</h3>
+          <p class="card-body">We serve manufacturers, distributors, and industrial businesses with consistent supply and reliable delivery cadence.</p>
+        </div>
+
+        <div class="card reveal" data-delay="1" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(236, 243, 247, 0.88) 100%), url('./network.png') center / cover no-repeat;">
+          <span class="card-num">05</span>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M2 12c0-5 4-10 10-10s10 5 10 10-4 10-10 10S2 17 2 12z"/><path d="M12 2c3 3 5 6 5 10s-2 7-5 10c-3-3-5-6-5-10s2-7 5-10z"/></svg>
+          </div>
+          <h3 class="card-title">Global Sourcing</h3>
+          <p class="card-body">Direct supplier relationships across Asia, the Middle East, Europe and the Americas — no middlemen, no whisper prices.</p>
+        </div>
+
+        <div class="card reveal" data-delay="2" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(236, 243, 247, 0.88) 100%), url('./shippingone.png') center / cover no-repeat;">
+          <span class="card-num">06</span>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <h3 class="card-title">Compliance &amp; Documentation</h3>
+          <p class="card-body">Certificate of origin, mill certificates, phytosanitary documents and sanctions screening — paper-clean before it ships.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-card reveal">
+        <span class="eyebrow" style="margin-bottom: 22px;">Ready to source?</span>
+        <h2>Tell us what you need to move.</h2>
+        <p>Send the specification, destination, and target window. We'll respond within one business day with sourcing options, indicative pricing, and a clear delivery plan.</p>
+        <div class="btn-group">
+          <a href="contact.html" class="btn btn-primary">
+            Contact us
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="about.html" class="btn btn-ghost">About Estel Energy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <img src="./estellogo.png" alt="Estel Energy logo" class="brand-logo">
+            <span class="brand-name">Estel <span>Energy</span></span>
+          </div>
+          <p class="footer-tag">A global import-export firm built for the way commodity trade should work — fast, transparent, paper-clean.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li><a href="services.html">Agro Products</a></li>
+            <li><a href="services.html">Polymers</a></li>
+            <li><a href="services.html">Cosmetics</a></li>
+            <li><a href="services.html">Metals</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="mailto:admin@estel-energy.com">admin@estel-energy.com</a></li>
+            <li><a href="tel:+19842964442">+1 (984)296-4442</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Estel Energy. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

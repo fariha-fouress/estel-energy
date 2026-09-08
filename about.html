@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Estel Energy</title>
+  <meta name="description" content="Estel Energy is a privately held import-export firm trading agricultural products, polymers, cosmetics and metals across global markets — built on quality, timely delivery and lasting partnerships.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="./estellogo.png">
+</head>
+<body>
+  <div class="ambient-bg"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="./estellogo.png" alt="Estel Energy logo" class="brand-logo">
+        <span class="brand-name">Estel <span>Energy</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">
+        Contact us
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <button class="menu-toggle" aria-label="Menu"><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <div class="reveal">
+        <span class="eyebrow">About Estel Energy</span>
+      </div>
+      <h1 class="reveal" data-delay="1">Built for the way commodity trade should work.</h1>
+      <p class="reveal" data-delay="2">A privately held import-export firm trading agricultural products, polymers, cosmetics and metals — connecting producers and buyers across continents with the discipline of a trading desk and the precision of a logistics operator.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT INTRO -->
+  <section class="section">
+    <div class="container">
+      <!-- Heading on its own line -->
+      <div class="reveal" style="margin-bottom: 48px;">
+        <span class="eyebrow" style="margin-bottom: 18px;">Who we are</span>
+        <h2>From producer to buyer, we close the loop.</h2>
+      </div>
+
+      <!-- Image + paragraphs side by side, top-aligned -->
+      <div class="about-intro" style="align-items: start;">
+        <div class="reveal">
+          <div style="aspect-ratio: 4/3; border-radius: var(--radius); overflow: hidden; background: linear-gradient(135deg, var(--surface), var(--bg-2)); border: 1px solid var(--border); box-shadow: 0 16px 40px rgba(15, 27, 34, 0.05);">
+            <img src="./shipping.png" alt="Estel Energy's global supply chain" style="width: 100%; height: 100%; object-fit: cover; display: block;"
+                 onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;padding:24px;color:var(--text-dim);font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-align:center;display:grid;place-items:center;height:100%&quot;>Supply chain<br>image</div>'">
+          </div>
+        </div>
+        <div class="about-intro-text reveal" data-delay="1">
+          <p>Estel Energy is a privately held import-export firm. We specialize in end-to-end commodity trading backed by robust logistics, strict quality control, and efficient supply chain management. Our global presence ensures seamless procurement and delivery across continents.</p>
+          <p>We trade four core categories — agricultural products, polymers, cosmetics, and metals — sourcing from vetted suppliers and delivering to manufacturers, distributors, and industrial buyers worldwide. Every cargo is paper-clean, every counterparty pre-screened, every shipment tracked.</p>
+          <p>We are committed to ensuring timely access to products, strengthening supply chains through responsive service, and building enduring partnerships based on mutual growth. We don't disappear after the contract is signed — we stay involved through clearance, settlement, and the next order.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="reveal values-head">
+        <div class="section-head" style="margin-bottom: 0; max-width: none;">
+          <span class="eyebrow">What we stand for</span>
+          <h2>Three principles, applied to every cargo.</h2>
+          <p>The same standards apply whether the order is one container or a hundred. That consistency is what our partners come back for.</p>
+        </div>
+        <div style="aspect-ratio: 4/3; border-radius: var(--radius); overflow: hidden; background: linear-gradient(135deg, var(--surface), var(--bg-2)); border: 1px solid var(--border); box-shadow: 0 16px 40px rgba(15, 27, 34, 0.05);">
+          <img src="./operations.png" alt="Our values in practice" style="width: 100%; height: 100%; object-fit: cover; display: block;"
+               onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;padding:24px;color:var(--text-dim);font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-align:center;display:grid;place-items:center;height:100%&quot;>Principles<br>image</div>'">
+        </div>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card reveal" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(236, 243, 247, 0.88) 100%), url('./operations.png') center / cover no-repeat;">
+          <span class="card-num">01</span>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 5-4 9-9 9s-9-4-9-9 4-9 9-9c3 0 6 1 8 3"/></svg>
+          </div>
+          <h3 class="card-title">Quality without compromise</h3>
+          <p class="card-body">Every shipment is inspected against agreed specifications before it leaves origin. If it doesn't meet the standard, it doesn't ship. No exceptions, no fine print.</p>
+        </div>
+
+        <div class="card reveal" data-delay="1" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(236, 243, 247, 0.88) 100%), url('./shippingone.png') center / cover no-repeat;">
+          <span class="card-num">02</span>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>
+          </div>
+          <h3 class="card-title">Timely, every time</h3>
+          <p class="card-body">We hit 98% on-time delivery because we plan for the things that go wrong, not just the things that go right. Real-time cargo tracking and direct carrier relationships keep cargo moving.</p>
+        </div>
+
+        <div class="card reveal" data-delay="2" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(236, 243, 247, 0.88) 100%), url('./metalsone.png') center / cover no-repeat;">
+          <span class="card-num">03</span>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3 class="card-title">Partnerships, not transactions</h3>
+          <p class="card-body">We treat counterparties as long-term partners, not single deals. Our stakeholders bring decades of relationships built that way — and Estel Energy is built to continue them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <section class="stats-band">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat reveal">
+          <div class="stat-num" data-count="50" data-suffix="+">0+</div>
+          <div class="stat-label">Years of combined stakeholder experience</div>
+        </div>
+        <div class="stat reveal" data-delay="1">
+          <div class="stat-num" data-count="4" data-suffix="">0</div>
+          <div class="stat-label">Core trade verticals</div>
+        </div>
+        <div class="stat reveal" data-delay="2">
+          <div class="stat-num" data-count="1" data-suffix=" BD">0 BD</div>
+          <div class="stat-label">Typical response time</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Leadership</span>
+        <h2>Decades of trading experience, one disciplined desk.</h2>
+        <p>Estel Energy is backed by stakeholders with deep, hands-on experience across commodity trading, supply chain operations and global logistics. That bench of expertise sits behind every cargo we move — guiding sourcing decisions, vetting counterparties and holding every shipment to the standard our partners expect.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-card reveal">
+        <span class="eyebrow" style="margin-bottom: 22px;">Ready to work together?</span>
+        <h2>Tell us what you need.</h2>
+        <p>Whether you're a producer looking for offtake or a buyer sourcing a cargo, our desk responds within one business day with a structured proposal.</p>
+        <div class="btn-group">
+          <a href="contact.html" class="btn btn-primary">
+            Contact us
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="services.html" class="btn btn-ghost">See our products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <img src="./estellogo.png" alt="Estel Energy logo" class="brand-logo">
+            <span class="brand-name">Estel <span>Energy</span></span>
+          </div>
+          <p class="footer-tag">A global import-export firm built for the way commodity trade should work — fast, transparent, paper-clean.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li><a href="services.html">Agro Products</a></li>
+            <li><a href="services.html">Polymers</a></li>
+            <li><a href="services.html">Cosmetics</a></li>
+            <li><a href="services.html">Metals</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="mailto:admin@estel-energy.com">admin@estel-energy.com</a></li>
+            <li><a href="tel:+19842964442">+1 (984)296-4442</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Estel Energy. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Estel Energy</title>
+  <meta name="description" content="Get in touch with Estel Energy's trading desk. We respond within one business day with a structured proposal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="./estellogo.png">
+</head>
+<body>
+  <div class="ambient-bg"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="./estellogo.png" alt="Estel Energy logo" class="brand-logo">
+        <span class="brand-name">Estel <span>Energy</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">
+        Contact us
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <button class="menu-toggle" aria-label="Menu"><span></span></button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <div class="reveal">
+        <span class="eyebrow">Contact</span>
+      </div>
+      <h1 class="reveal" data-delay="1">Tell us what you need to move.</h1>
+      <p class="reveal" data-delay="2">Whether you're sourcing a cargo, requesting pricing, or exploring a long-term partnership — our desk responds within one business day.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: info -->
+        <div class="contact-info reveal">
+          <div class="contact-info-block">
+            <h4>Trade desk</h4>
+            <p><a href="mailto:admin@estel-energy.com">admin@estel-energy.com</a></p>
+            <p><a href="tel:+19842964442">+1 (984)296-4442</a></p>
+            <p style="color: var(--text-muted); margin-top: 6px; font-size: 14px;">For sourcing, quotations and trade enquiries — typical response within one business day.</p>
+          </div>
+
+          <div class="contact-info-block">
+            <h4>Phone</h4>
+            <p><a href="tel:+19842964442">+1 (984)296-4442</a></p>
+          </div>
+
+          <div class="contact-info-block">
+            <h4>Headquarters</h4>
+            <p style="color: var(--text-muted); font-size: 14.5px;">We are updating this information, stay tuned!</p>
+          </div>
+
+          <div class="contact-info-block">
+            <h4>Trading hours</h4>
+            <p style="color: var(--text-muted); font-size: 14.5px;">We are updating this information, stay tuned!</p>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <form id="contact-form" class="contact-form reveal" data-delay="1" novalidate style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(236, 243, 247, 0.88) 100%), url('./handshake.png') center / cover no-repeat;">
+          <h3>Send us a message</h3>
+          <p>Share what you're looking to move and our desk will be in touch within one business day.</p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Full name <span class="req">*</span></label>
+              <input id="cf-name" name="name" type="text" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="cf-company">Company</label>
+              <input id="cf-company" name="company" type="text" placeholder="Company name">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-email">Email <span class="req">*</span></label>
+              <input id="cf-email" name="email" type="email" required placeholder="you@company.com">
+            </div>
+            <div class="form-group">
+              <label for="cf-phone">Phone</label>
+              <input id="cf-phone" name="phone" type="tel" placeholder="+00 000 000 0000">
+            </div>
+          </div>
+
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="cf-product">Product category <span class="req">*</span></label>
+              <select id="cf-product" name="product" required>
+                <option value="">Select a category</option>
+                <option value="agro">Agro Products</option>
+                <option value="polymers">Polymers</option>
+                <option value="cosmetics">Cosmetics</option>
+                <option value="metals">Metals</option>
+                <option value="other">Other / not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="cf-message">What do you need to move? <span class="req">*</span></label>
+              <textarea id="cf-message" name="message" required placeholder="Quantity, specifications, origin / destination, target window…"></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <span class="note">We typically respond within one business day.</span>
+            <button type="submit" class="btn btn-primary">
+              Send message
+              <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+
+          <div class="form-success">
+            Thanks — your message is in. Our desk will be in touch within one business day.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <img src="./estellogo.png" alt="Estel Energy logo" class="brand-logo">
+            <span class="brand-name">Estel <span>Energy</span></span>
+          </div>
+          <p class="footer-tag">A global import-export firm built for the way commodity trade should work — fast, transparent, paper-clean.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li><a href="services.html">Agro Products</a></li>
+            <li><a href="services.html">Polymers</a></li>
+            <li><a href="services.html">Cosmetics</a></li>
+            <li><a href="services.html">Metals</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="mailto:admin@estel-energy.com">admin@estel-energy.com</a></li>
+            <li><a href="tel:+19842964442">+1 (984)296-4442</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Estel Energy. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
